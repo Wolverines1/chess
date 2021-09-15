@@ -1,0 +1,76 @@
+C:\Users\Wolverine\Desktop\Basic\2018_chess\ches123\ches123\bin\Debug\ches123.exe
+C:\Users\Wolverine\Desktop\Basic\2018_chess\ches123\ches123\bin\Debug\ches123.pdb
+C:\Users\Wolverine\Desktop\Basic\2018_chess\ches123\ches123\bin\Debug\ches123.xml
+C:\Users\Wolverine\Desktop\Basic\2018_chess\ches123\ches123\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\Wolverine\Desktop\Basic\2018_chess\ches123\ches123\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Wolverine\Desktop\Basic\2018_chess\ches123\ches123\obj\x86\Debug\ches123.vbproj.GenerateResource.Cache
+C:\Users\Wolverine\Desktop\Basic\2018_chess\ches123\ches123\obj\x86\Debug\ches123.exe
+C:\Users\Wolverine\Desktop\Basic\2018_chess\ches123\ches123\obj\x86\Debug\ches123.xml
+C:\Users\Wolverine\Desktop\Basic\2018_chess\ches123\ches123\obj\x86\Debug\ches123.pdb
+D:\Basic\2018_chess\Kopii\9_ches123\ches123\obj\x86\Debug\ches123.exe
+D:\Basic\2018_chess\Kopii\9_ches123\ches123\obj\x86\Debug\ches123.xml
+D:\Basic\2018_chess\Kopii\9_ches123\ches123\obj\x86\Debug\ches123.pdb
+D:\Basic\2018_chess\Kopii\9_ches123\ches123\bin\Debug\ches123.exe
+D:\Basic\2018_chess\Kopii\9_ches123\ches123\bin\Debug\ches123.pdb
+D:\Basic\2018_chess\Kopii\9_ches123\ches123\bin\Debug\ches123.xml
+D:\Basic\2018_chess\Kopii\9_ches123\ches123\obj\x86\Debug\WindowsApplication1.Form1.resources
+D:\Basic\2018_chess\Kopii\9_ches123\ches123\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\Basic\2018_chess\Kopii\9_ches123\ches123\obj\x86\Debug\ches123.vbproj.GenerateResource.Cache
+D:\Basic\2018_chess\9_ches123\ches123\obj\x86\Debug\ches123.exe
+D:\Basic\2018_chess\9_ches123\ches123\obj\x86\Debug\ches123.xml
+D:\Basic\2018_chess\9_ches123\ches123\obj\x86\Debug\ches123.pdb
+D:\Basic\2018_chess\9_ches123\ches123\bin\Debug\ches123.exe
+D:\Basic\2018_chess\9_ches123\ches123\bin\Debug\ches123.pdb
+D:\Basic\2018_chess\9_ches123\ches123\bin\Debug\ches123.xml
+D:\Basic\2018_chess\9_ches123\ches123\obj\x86\Debug\WindowsApplication1.Form1.resources
+D:\Basic\2018_chess\9_ches123\ches123\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\Basic\2018_chess\9_ches123\ches123\obj\x86\Debug\ches123.vbproj.GenerateResource.Cache
+D:\Basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\ches123.exe
+D:\Basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\ches123.xml
+D:\Basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\ches123.pdb
+D:\Basic\0_git_chess_doska\9_ches123\ches123\bin\Debug\ches123.exe
+D:\Basic\0_git_chess_doska\9_ches123\ches123\bin\Debug\ches123.pdb
+D:\Basic\0_git_chess_doska\9_ches123\ches123\bin\Debug\ches123.xml
+D:\Basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\WindowsApplication1.Form1.resources
+D:\Basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\Basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\ches123.vbproj.GenerateResource.Cache
+C:\Users\egor.krivoborodov\Desktop\Egor\000_basic\0_git_chess_doska\9_ches123\ches123\bin\Debug\ches123.exe
+C:\Users\egor.krivoborodov\Desktop\Egor\000_basic\0_git_chess_doska\9_ches123\ches123\bin\Debug\ches123.pdb
+C:\Users\egor.krivoborodov\Desktop\Egor\000_basic\0_git_chess_doska\9_ches123\ches123\bin\Debug\ches123.xml
+C:\Users\egor.krivoborodov\Desktop\Egor\000_basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\egor.krivoborodov\Desktop\Egor\000_basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\egor.krivoborodov\Desktop\Egor\000_basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\ches123.vbproj.GenerateResource.cache
+C:\Users\egor.krivoborodov\Desktop\Egor\000_basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\ches123.exe
+C:\Users\egor.krivoborodov\Desktop\Egor\000_basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\ches123.xml
+C:\Users\egor.krivoborodov\Desktop\Egor\000_basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\ches123.pdb
+C:\Users\egor.krivoborodov\Desktop\Egor\000_basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\ches123.vbprojResolveAssemblyReference.cache
+E:\000_basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\ches123.exe
+E:\000_basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\ches123.xml
+E:\000_basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\ches123.pdb
+D:\000_basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\ches123.exe
+D:\000_basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\ches123.xml
+D:\000_basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\ches123.pdb
+D:\Basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\ches123.vbprojAssemblyReference.cache
+D:\Basic\0_git_chess_doska\9_ches123\ches123\obj\x86\Debug\ches123.vbproj.CoreCompileInputs.cache
+D:\Basic\0_git_chess_doska - Kopie\9_ches123\ches123\bin\Debug\ches123.exe
+D:\Basic\0_git_chess_doska - Kopie\9_ches123\ches123\bin\Debug\ches123.pdb
+D:\Basic\0_git_chess_doska - Kopie\9_ches123\ches123\bin\Debug\ches123.xml
+D:\Basic\0_git_chess_doska - Kopie\9_ches123\ches123\obj\x86\Debug\ches123.vbprojAssemblyReference.cache
+D:\Basic\0_git_chess_doska - Kopie\9_ches123\ches123\obj\x86\Debug\WindowsApplication1.Form1.resources
+D:\Basic\0_git_chess_doska - Kopie\9_ches123\ches123\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\Basic\0_git_chess_doska - Kopie\9_ches123\ches123\obj\x86\Debug\ches123.vbproj.GenerateResource.cache
+D:\Basic\0_git_chess_doska - Kopie\9_ches123\ches123\obj\x86\Debug\ches123.vbproj.CoreCompileInputs.cache
+D:\Basic\0_git_chess_doska - Kopie\9_ches123\ches123\obj\x86\Debug\ches123.exe
+D:\Basic\0_git_chess_doska - Kopie\9_ches123\ches123\obj\x86\Debug\ches123.xml
+D:\Basic\0_git_chess_doska - Kopie\9_ches123\ches123\obj\x86\Debug\ches123.pdb
+D:\Basic\0_git_chess_doska_Bachelor\9_ches123\ches123\bin\Debug\ches123.exe
+D:\Basic\0_git_chess_doska_Bachelor\9_ches123\ches123\bin\Debug\ches123.pdb
+D:\Basic\0_git_chess_doska_Bachelor\9_ches123\ches123\bin\Debug\ches123.xml
+D:\Basic\0_git_chess_doska_Bachelor\9_ches123\ches123\obj\x86\Debug\ches123.vbprojAssemblyReference.cache
+D:\Basic\0_git_chess_doska_Bachelor\9_ches123\ches123\obj\x86\Debug\WindowsApplication1.Form1.resources
+D:\Basic\0_git_chess_doska_Bachelor\9_ches123\ches123\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\Basic\0_git_chess_doska_Bachelor\9_ches123\ches123\obj\x86\Debug\ches123.vbproj.GenerateResource.cache
+D:\Basic\0_git_chess_doska_Bachelor\9_ches123\ches123\obj\x86\Debug\ches123.vbproj.CoreCompileInputs.cache
+D:\Basic\0_git_chess_doska_Bachelor\9_ches123\ches123\obj\x86\Debug\ches123.exe
+D:\Basic\0_git_chess_doska_Bachelor\9_ches123\ches123\obj\x86\Debug\ches123.xml
+D:\Basic\0_git_chess_doska_Bachelor\9_ches123\ches123\obj\x86\Debug\ches123.pdb
