@@ -23,7 +23,6 @@ Public Class Form1
     Public indexAllMoves As Integer = 0
     Public moveNumber As Integer = 0
     'Public indexAllMoveCopy As Integer = 0
-    'Test
     Public nomerHodaCopy As Integer = 0
     Public clickedMove As Integer = 0
     Public boardChanged As Integer = 0
@@ -104,18 +103,7 @@ Public Class Form1
 
         create()
 
-        'Proba nuzhno??????????????????
         'control()
-
-        'Dim imgSave As New Bitmap(My.Resources.meer)
-        'Dim img2Save As New Bitmap(imgSave, Me.Width, Me.Height)
-        'Me.BackgroundImage = img2Save
-
-        'Me.TransparencyKey = Color.Magenta
-        'Me.BackColor = Color.Magenta
-
-        'MsgBox(Me.BackColor.ToString)
-        'Me.BackColor = Color.FromArgb(51, 51, 51)
     End Sub
 
     Public Sub create()
@@ -126,7 +114,7 @@ Public Class Form1
         'Print the board (64 PictureBox)
         Ob1.board()
 
-        'Print ListBoxen (chess blank and ???????????)
+        'Print ListBoxen (chess blank and Varianten)
         Ob1.printListBoxen()
 
         'Print all (Buttons, Labels, TextBoxes)
@@ -139,7 +127,7 @@ Public Class Form1
         B_parol.Visible = False
     End Sub
 
-    'Parol nuzhno??????????????????--------------------------------------------------------
+    'Parol
     Public Sub control()
         Dim Ob1 As ContolParol = New ContolParol()
         Ob1.parolGenerieren()
@@ -150,7 +138,7 @@ Public Class Form1
         Dim Ob1 As ContolParol = New ContolParol()
         Ob1.buttonParol()
     End Sub
-    'Parol nuzhno??????????????????--------------------------------------------------------
+    'Parol--------------------------------------------------------
 
     '--------------------------------------------------------------------------------------
     'set start values
