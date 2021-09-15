@@ -23,6 +23,7 @@ Public Class Form1
     Public indexAllMoves As Integer = 0
     Public moveNumber As Integer = 0
     'Public indexAllMoveCopy As Integer = 0
+    'Test
     Public nomerHodaCopy As Integer = 0
     Public clickedMove As Integer = 0
     Public boardChanged As Integer = 0
