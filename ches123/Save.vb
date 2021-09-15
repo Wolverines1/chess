@@ -21,6 +21,11 @@ Class Save
         'clear chess blank
         Form1.ListBox1.Items.Clear()
 
+        If Form1.moveNumber = 0 Then
+            MsgBox("empty game!")
+            Return
+        End If
+
         'Form1.moveNumber has the number of moves, white and black.
         'For example
         '1.e2-e4 e7-e5  (Form1.moveNumber = 2) (Form1.moveNumberReal = 1)

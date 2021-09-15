@@ -79,6 +79,9 @@ Public Class Form1
     Public Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         WindowState = FormWindowState.Maximized
 
+        B_open.Visible = False
+        B_add.Visible = False
+
         Button1.Visible = False
         B_form.Enabled = False
         B_Read.Visible = False
@@ -138,7 +141,9 @@ Public Class Form1
         Dim Ob1 As ContolParol = New ContolParol()
         Ob1.buttonParol()
     End Sub
-    'Parol--------------------------------------------------------
+
+
+    'Parol-------------------------------------------------------
 
     '--------------------------------------------------------------------------------------
     'set start values
@@ -469,19 +474,92 @@ Public Class Form1
     'right click
     'remove/show unnecessary/necessary buttons 
     Private Sub ToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripMenuItem2.Click
+        disableStart()
+
+        Dim sizeField As Integer = (Me.Size.Width * 0.45) \ 8
+        Dim frontier As Integer = Me.Size.Width \ 2 + sizeField \ 2
+
+        '----------B_open----------
+        B_open.Visible = True
+        B_open.BackColor = Color.AliceBlue
+        B_open.Top = sizeField
+        B_open.Left = frontier
+        B_open.Height = sizeField \ 2
+        B_open.Width = sizeField
+        B_open.Text = "Open"
+
+        '----------B_add----------
+        B_add.Visible = True
+        B_add.BackColor = Color.AliceBlue
+        B_add.Top = sizeField
+        B_add.Left = frontier + 2 * sizeField
+        B_add.Height = sizeField \ 2
+        B_add.Width = sizeField
+        B_add.Text = "Save"
+    End Sub
+
+    Private Sub disableStart()
         B_board_change.Visible = False
         B_links.Visible = False
         B_rechts.Visible = False
         B_minus.Visible = False
         B_plus.Visible = False
+        B_start.Visible = False
+        B_save.Visible = False
+        B_form.Visible = False
+        B_clear.Visible = False
+        B_nazad.Visible = False
+        B_delete_move.Visible = False
+        B_vpered.Visible = False
+        B_trenirovka.Visible = False
+
+        ListBox1.Visible = False
+        ListBox2.Visible = False
+        L_all_statistik.Visible = False
+        Label_statistik.Visible = False
+        Label_sec.Visible = False
+        L_Info.Visible = False
+
+        Chart1.Visible = False
+
+        TextBox1.Visible = False
+        TextBox2.Visible = False
+        TextBox3.Visible = False
     End Sub
 
-    Private Sub ToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripMenuItem3.Click
+    Private Sub allowStart()
         B_board_change.Visible = True
         B_links.Visible = True
         B_rechts.Visible = True
         B_minus.Visible = True
         B_plus.Visible = True
+        B_start.Visible = True
+        B_save.Visible = True
+        B_form.Visible = True
+        B_clear.Visible = True
+        B_nazad.Visible = True
+        B_delete_move.Visible = True
+        B_vpered.Visible = True
+        B_trenirovka.Visible = True
+
+        ListBox1.Visible = True
+        ListBox2.Visible = True
+        L_all_statistik.Visible = True
+        Label_statistik.Visible = True
+        Label_sec.Visible = True
+        L_Info.Visible = True
+
+        Chart1.Visible = True
+
+        TextBox1.Visible = True
+        TextBox2.Visible = True
+        TextBox3.Visible = True
+    End Sub
+
+    Private Sub ToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripMenuItem3.Click
+        allowStart()
+        B_open.Visible = False
+        B_add.Visible = False
     End Sub
     '--------------------------------------------------------------------------------------------------------------
     Private Sub B_Read_Click(ByVal sender As Object, ByVal e As EventArgs) Handles B_Read.Click
@@ -492,7 +570,6 @@ Public Class Form1
     Private Sub B_trenirovka_Click(ByVal sender As Object, ByVal e As EventArgs) Handles B_trenirovka.Click
         Me.PictureBox64.Image = My.Resources.waiting
         Button1.Visible = True
-        'MsgBox("indexRepeat = " & indexRepeat)
         If readMode = 0 Then
             MsgBox("file not take!")
             Return
@@ -516,6 +593,17 @@ Public Class Form1
             mode = CInt(TextBox1.Text)
             secondProZug = CInt(TextBox2.Text)
             numberRepeat = CInt(TextBox3.Text)
+
+            If mode < 0 Then
+                mode = 1
+            End If
+            If secondProZug <= 0 Then
+                mode = 30
+            End If
+            If numberRepeat <= 0 Then
+                mode = 1
+            End If
+
             B_nazad.Enabled = False
             B_vpered.Enabled = False
             B_delete_move.Enabled = False
@@ -546,65 +634,6 @@ Public Class Form1
         If mode = 3 Then
             B_vpered_Click(SendKeys, New System.EventArgs())
             mode = 2
-        End If
-
-        'indexAllMoveEND = indexAllMoves
-        'MsgBox(indexAllMoves)
-        'indexTraining = 0
-
-        'indexAllMoves = 0
-        'If mode = 3 Then
-        '    indexAllMoves += 4
-        '    B_vpered_Click(SendKeys, New System.EventArgs())
-        '    mode = 2
-        'End If
-        'MsgBox(mode.ToString)
-    End Sub
-
-    ' Private Sub KeyHandler_KeyDown(KeyCode As Integer, Shift As Integer)
-    ' Dim intShiftDown As Integer, intAltDown As Integer
-    ' Dim intCtrlDown As Integer
-
-    '    ' Use bit masks to determine which key was pressed. 
-    '    intShiftDown = (Shift And acShiftMask) > 0
-    '    intAltDown = (Shift And acAltMask) > 0
-    '   intCtrlDown = (Shift And acCtrlMask) > 0
-    '' Display message telling user which key was pressed. 
-    ' If intShiftDown Then MsgBox "You pressed the Shift key." 
-    ' If intAltDown Then MsgBox "You pressed the Alt key." 
-    ' If intCtrlDown Then MsgBox "You pressed the Ctrl key." 
-    ' End Sub
-
-
-    Private Sub Form1_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
-        'If (e.KeyData = Keys.Right) Then
-        'MsgBox("aaa")
-        'End If
-        'MsgBox("sss")
-        'MsgBox("control = " + e.Control.ToString + ", shift = " + e.Shift.ToString + ", e.Keycode = " + e.KeyCode.ToString)
-    End Sub
-
-    Private Sub Form1_KeyUp(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyUp
-        'If (e.KeyData = Keys.Space) Then
-        'MsgBox("aaa")
-        'End If
-        'If (e.KeyData = Keys.Right) Then
-        'MsgBox("aaa2")
-        'B_vpered_Click(sender, e)
-        ' End If
-    End Sub
-    Private Sub Form1_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Me.KeyPress
-        If e.KeyChar = "k" OrElse e.KeyChar = "K" Then
-            MessageBox.Show("Pressed!")
-            ListBox1.Items.Clear()
-            Button_Clear_Click(sender, e)
-            ListBox2.SetSelected(1, True)
-            B_trenirovka_Click(sender, e)
-            MsgBox("Pause")
-            ListBox1.Items.Clear()
-            Button_Clear_Click(sender, e)
-            ListBox2.SetSelected(2, True)
-            B_trenirovka_Click(sender, e)
         End If
     End Sub
 
@@ -656,27 +685,34 @@ Public Class Form1
     End Sub
 
     Private Sub B_start_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles B_start.Click
+        B_form.Visible = True
         B_form.Enabled = True
         Button_Clear_Click(sender, e)
+        numberOptions = 0
         Dim Ob1 As ShowStatistics = New ShowStatistics()
         Ob1.showDebutStatistics()
+        ListBox2.SetSelected(0, True)
     End Sub
 
     Private Sub Button1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles Button1.Click
         numberRepeat -= 1
         TextBox3.Text = numberRepeat.ToString
         If numberRepeat <> 0 Then
+            If numberRepeat <= 0 Then
+                numberRepeat = 1
+            End If
             ListBox1.Items.Clear()
-            Dim Ob1 As FirstPrint = New FirstPrint()
-            Ob1.set_start_values()
-            indexRepeat += 1
-            'MsgBox("indexRepeat = " & indexRepeat)
-            ListBox2.SetSelected(indexRepeat, True)
-            B_trenirovka_Click(SendKeys, New System.EventArgs())
-        Else
-            indexRepeat = 0
+                Dim Ob1 As FirstPrint = New FirstPrint()
+                Ob1.set_start_values()
+                indexRepeat += 1
+                'MsgBox("indexRepeat = " & indexRepeat)
+                ListBox2.SetSelected(indexRepeat, True)
+                B_trenirovka_Click(SendKeys, New System.EventArgs())
+            Else
+                indexRepeat = 0
             ListBox2.SetSelected(indexRepeat, True)
             MsgBox("No more options")
+            Button1.Visible = False
         End If
     End Sub
 
@@ -726,6 +762,7 @@ Public Class Form1
 
         arraySort(arrSortString)
 
+        ListBox2.SetSelected(0, True)
         'For i = 0 To numberOptions - 1
         '    MsgBox(arrSortString(i))
         'Next i
@@ -754,34 +791,39 @@ Public Class Form1
         ListBox2.Items.Clear()
 
         If indexSortRound = 0 Then
+            Label_statistik.Text = "Sort by %"
             'MsgBox("sortMyProcent()")
             sortMyProcent()
             indexSortRound = 1
             Return
         End If
         If indexSortRound = 1 Then
+            Label_statistik.Text = "Sort by number of attempts"
             'MsgBox("sortMyNumberAttempts()")
             sortMyNumberAttempts()
             indexSortRound = 2
             Return
         End If
         If indexSortRound = 2 Then
+            Label_statistik.Text = "Sort by name"
             'MsgBox("sortMyName()")
             sortMyName()
             indexSortRound = 3
             Return
         End If
         If indexSortRound = 3 Then
+            Label_statistik.Text = "Sort by variant creation date"
             'MsgBox("sortMyDataBorn()")
             sortMyDataBorn()
             indexSortRound = 4
             Return
         End If
         If indexSortRound = 4 Then
+            Label_statistik.Text = "Sort by the date of the last repetition"
             'MsgBox("sortMyDataRepeat()")
             sortMyDataRepeat()
             indexSortRound = 0
-            B_form.Enabled = False
+            B_form.Visible = False
             Return
         End If
 
@@ -1012,4 +1054,40 @@ Public Class Form1
         Next i
         Return indexMin
     End Function
+
+    Private Sub B_open_Click(sender As Object, e As EventArgs) Handles B_open.Click
+        allowStart()
+        B_open.Visible = False
+        B_add.Visible = False
+
+        B_save.Visible = False
+        B_delete_move.Visible = False
+
+        TextBox1.Text = "1"
+        TextBox2.Text = "10"
+        TextBox3.Text = "1"
+        B_start_Click(sender, e)
+    End Sub
+
+    Private Sub B_add_Click(sender As Object, e As EventArgs) Handles B_add.Click
+        allowStart()
+        B_open.Visible = False
+        B_add.Visible = False
+
+        B_start.Visible = False
+        B_form.Visible = False
+        B_trenirovka.Visible = False
+
+        ListBox2.Visible = False
+        L_all_statistik.Visible = False
+        Label_statistik.Visible = False
+        Label_sec.Visible = False
+        L_Info.Visible = False
+
+        Chart1.Visible = False
+
+        TextBox1.Visible = False
+        TextBox2.Visible = False
+        TextBox3.Visible = False
+    End Sub
 End Class

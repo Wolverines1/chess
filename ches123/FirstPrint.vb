@@ -7,7 +7,7 @@ Class FirstPrint
 
     Public Sub board()
         'Field size 
-        sizeField = Form1.Size.Height \ 10
+        'sizeField = Form1.Size.Height \ 10
         sizeField = (Form1.Size.Width * 0.45) \ 8
         'coordinate height field a8
         coordStartHeight = 2

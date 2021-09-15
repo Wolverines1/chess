@@ -23,9 +23,9 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.B_clear = New System.Windows.Forms.Button()
         Me.Label_Color = New System.Windows.Forms.Label()
         Me.B_nazad = New System.Windows.Forms.Button()
@@ -126,6 +126,8 @@ Partial Class Form1
         Me.L_all_statistik = New System.Windows.Forms.Label()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.B_open = New System.Windows.Forms.Button()
+        Me.B_add = New System.Windows.Forms.Button()
         Me.ContextMenuStrip1.SuspendLayout()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox64, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -443,18 +445,18 @@ Partial Class Form1
         '
         'Chart1
         '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend1)
+        ChartArea3.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea3)
+        Legend3.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend3)
         Me.Chart1.Location = New System.Drawing.Point(2002, 442)
         Me.Chart1.Margin = New System.Windows.Forms.Padding(6)
         Me.Chart1.Name = "Chart1"
-        Series1.ChartArea = "ChartArea1"
-        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie
-        Series1.Legend = "Legend1"
-        Series1.Name = "diagramm"
-        Me.Chart1.Series.Add(Series1)
+        Series3.ChartArea = "ChartArea1"
+        Series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie
+        Series3.Legend = "Legend1"
+        Series3.Name = "diagramm"
+        Me.Chart1.Series.Add(Series3)
         Me.Chart1.Size = New System.Drawing.Size(672, 424)
         Me.Chart1.TabIndex = 182
         Me.Chart1.Text = "Chart1"
@@ -1208,6 +1210,24 @@ Partial Class Form1
         Me.TextBox3.TabIndex = 188
         Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'B_open
+        '
+        Me.B_open.Location = New System.Drawing.Point(1088, 429)
+        Me.B_open.Name = "B_open"
+        Me.B_open.Size = New System.Drawing.Size(162, 79)
+        Me.B_open.TabIndex = 189
+        Me.B_open.Text = "Button2"
+        Me.B_open.UseVisualStyleBackColor = True
+        '
+        'B_add
+        '
+        Me.B_add.Location = New System.Drawing.Point(1088, 528)
+        Me.B_add.Name = "B_add"
+        Me.B_add.Size = New System.Drawing.Size(162, 79)
+        Me.B_add.TabIndex = 190
+        Me.B_add.Text = "Button2"
+        Me.B_add.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(16.0!, 31.0!)
@@ -1215,6 +1235,8 @@ Partial Class Form1
         Me.BackColor = System.Drawing.Color.Silver
         Me.ClientSize = New System.Drawing.Size(3071, 1070)
         Me.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.Controls.Add(Me.B_add)
+        Me.Controls.Add(Me.B_open)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.L_all_statistik)
         Me.Controls.Add(Me.B_form)
@@ -1483,4 +1505,6 @@ Partial Class Form1
     Friend WithEvents L_all_statistik As System.Windows.Forms.Label
     Friend WithEvents Timer2 As System.Windows.Forms.Timer
     Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents B_open As Button
+    Friend WithEvents B_add As Button
 End Class
